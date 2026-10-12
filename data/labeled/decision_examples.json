@@ -1,0 +1,37 @@
+{
+  "examples": [
+    {
+      "records": [
+        {"timestamp": "2024-01-01T09:00:00Z", "text": "The team approved the launch budget for Q3."}
+      ],
+      "reversal": false
+    },
+    {
+      "records": [
+        {"timestamp": "2024-01-01T09:00:00Z", "text": "The team proposed the launch budget for Q3."},
+        {"timestamp": "2024-01-02T09:00:00Z", "text": "Later, we rejected the launch budget after cost overruns."}
+      ],
+      "reversal": false
+    },
+    {
+      "records": [
+        {"timestamp": "2024-01-01T09:00:00Z", "text": "PostgreSQL was approved as the database."},
+        {"timestamp": "2024-01-02T09:00:00Z", "text": "After review, MongoDB was explicitly approved instead."}
+      ],
+      "reversal": true
+    },
+    {
+      "records": [
+        {"timestamp": "2024-01-01T09:00:00Z", "text": "We will postpone the feature launch until next month."}
+      ],
+      "reversal": false
+    },
+    {
+      "records": [
+        {"timestamp": "2024-01-01T09:00:00Z", "text": "PostgreSQL was approved as the database."},
+        {"timestamp": "2024-01-02T09:00:00Z", "text": "The PostgreSQL configuration was changed to use SSL."}
+      ],
+      "reversal": false
+    }
+  ]
+}

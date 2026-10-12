@@ -1,0 +1,17 @@
+[
+  {
+    "id": "m1",
+    "timestamp": "2024-01-07T09:00:00Z",
+    "text": "The product team approved the Q2 launch budget after the planning review."
+  },
+  {
+    "id": "m2",
+    "timestamp": "2024-01-10T14:30:00Z",
+    "text": "The finance group rejected the launch budget because the spending forecast exceeded the cap."
+  },
+  {
+    "id": "m3",
+    "timestamp": "2024-01-13T11:15:00Z",
+    "text": "Later, leadership reconsidered the budget and restored the original launch plan."
+  }
+]

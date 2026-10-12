@@ -1,0 +1,27 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: development
+      LOG_LEVEL: INFO
+      CORS_ORIGINS: http://localhost:5173,http://127.0.0.1:5173
+      MAX_UPLOAD_BYTES: 5000000
+      MAX_IMPORT_ROWS: 2000
+      NLP_MODEL_NAME: en_core_web_sm
+      DECISION_MATCH_THRESHOLD: 0.42
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health').read()"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
